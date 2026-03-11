@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
@@ -40,7 +41,7 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between">
                 <Link href="/" className="group flex items-center gap-2 z-50">
-                    <img src="/logo.svg" alt="Sol Fung Monogram" className="w-8 h-8" />
+                    <Image src="/logo.svg" alt="Sol Fung Monogram" width={32} height={32} />
                     <span className="font-serif text-xl font-bold tracking-tight text-text-primary">
                         Sol.Fung
                     </span>

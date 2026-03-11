@@ -91,6 +91,7 @@ export default function WebGLBackground() {
   const mountRef = useRef<HTMLDivElement>(null);
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const uniformsRef = useRef<any>(null);
 
   useEffect(() => {
@@ -108,9 +109,6 @@ export default function WebGLBackground() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     mountRef.current.appendChild(renderer.domElement);
-
-    // Shader Material Variables Default
-    const isDark = true;
 
     uniformsRef.current = {
       u_time: { value: 0.0 },
