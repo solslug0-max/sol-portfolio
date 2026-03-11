@@ -23,7 +23,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Education />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <WhatsAppBubble />
     </div>
