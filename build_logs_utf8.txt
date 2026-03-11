@@ -1,0 +1,443 @@
+﻿
+> sol-portfolio@0.1.0 build
+> next build
+
+  Ôû▓ Next.js 14.2.15
+
+   Creating an optimized production build ...
+node.exe : Failed to 
+compile.
+En línea: 1 Carácter: 1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Failed to com   
+ pile.:String) [],     
+RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+
+./app/globals.css.webpa
+ck[javascript/auto]!=!.
+/node_modules/next/dist
+/build/webpack/loaders/
+css-loader/src/index.js
+??ruleSet[1].rules[14].
+oneOf[12].use[2]!./node
+_modules/next/dist/buil
+d/webpack/loaders/postc
+ss-loader/src/index.js?
+?ruleSet[1].rules[14].o
+neOf[12].use[3]!./app/g
+lobals.css
+Error: Cannot find 
+module 
+'tailwindcss-animate'
+Require stack:
+- C:\Users\sfung\OneDri
+ve - Jeruth\1.SFS\Escri
+torio\SFS\sol-portfolio
+\tailwind.config.ts
+    at 
+Module.<anonymous> (nod
+e:internal/modules/cjs/
+loader:1421:15)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\next
+\dist\server\require-ho
+ok.js:55:36
+    at require.resolve 
+(node:internal/modules/
+helpers:163:19)
+    at _resolve (C:\Use
+rs\sfung\OneDrive - Jer
+uth\1.SFS\Escritorio\SF
+S\sol-portfolio\node_mo
+dules\jiti\dist\jiti.js
+:1:246378)
+    at jiti (C:\Users\s
+fung\OneDrive - Jeruth\
+1.SFS\Escritorio\SFS\so
+l-portfolio\node_module
+s\jiti\dist\jiti.js:1:2
+49092)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\tailwind.config.t
+s:97:13
+    at evalModule (C:\U
+sers\sfung\OneDrive - J
+eruth\1.SFS\Escritorio\
+SFS\sol-portfolio\node_
+modules\jiti\dist\jiti.
+js:1:251913)
+    at jiti (C:\Users\s
+fung\OneDrive - Jeruth\
+1.SFS\Escritorio\SFS\so
+l-portfolio\node_module
+s\jiti\dist\jiti.js:1:2
+49841)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\tail
+windcss\lib\lib\load-co
+nfig.js:53:30
+    at loadConfig (C:\U
+sers\sfung\OneDrive - J
+eruth\1.SFS\Escritorio\
+SFS\sol-portfolio\node_
+modules\tailwindcss\lib
+\lib\load-config.js:55:
+6)
+
+Import trace for 
+requested module:
+./app/globals.css.webpa
+ck[javascript/auto]!=!.
+/node_modules/next/dist
+/build/webpack/loaders/
+css-loader/src/index.js
+??ruleSet[1].rules[14].
+oneOf[12].use[2]!./node
+_modules/next/dist/buil
+d/webpack/loaders/postc
+ss-loader/src/index.js?
+?ruleSet[1].rules[14].o
+neOf[12].use[3]!./app/g
+lobals.css
+./app/globals.css
+
+./app/globals.css
+Error: Cannot find 
+module 
+'tailwindcss-animate'
+Require stack:
+- C:\Users\sfung\OneDri
+ve - Jeruth\1.SFS\Escri
+torio\SFS\sol-portfolio
+\tailwind.config.ts
+    at 
+Module.<anonymous> (nod
+e:internal/modules/cjs/
+loader:1421:15)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\next
+\dist\server\require-ho
+ok.js:55:36
+    at require.resolve 
+(node:internal/modules/
+helpers:163:19)
+    at _resolve (C:\Use
+rs\sfung\OneDrive - Jer
+uth\1.SFS\Escritorio\SF
+S\sol-portfolio\node_mo
+dules\jiti\dist\jiti.js
+:1:246378)
+    at jiti (C:\Users\s
+fung\OneDrive - Jeruth\
+1.SFS\Escritorio\SFS\so
+l-portfolio\node_module
+s\jiti\dist\jiti.js:1:2
+49092)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\tailwind.config.t
+s:97:13
+    at evalModule (C:\U
+sers\sfung\OneDrive - J
+eruth\1.SFS\Escritorio\
+SFS\sol-portfolio\node_
+modules\jiti\dist\jiti.
+js:1:251913)
+    at jiti (C:\Users\s
+fung\OneDrive - Jeruth\
+1.SFS\Escritorio\SFS\so
+l-portfolio\node_module
+s\jiti\dist\jiti.js:1:2
+49841)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\tail
+windcss\lib\lib\load-co
+nfig.js:53:30
+    at loadConfig (C:\U
+sers\sfung\OneDrive - J
+eruth\1.SFS\Escritorio\
+SFS\sol-portfolio\node_
+modules\tailwindcss\lib
+\lib\load-config.js:55:
+6)
+    at 
+tryRunOrWebpackError (C
+:\Users\sfung\OneDrive 
+- Jeruth\1.SFS\Escritor
+io\SFS\sol-portfolio\no
+de_modules\next\dist\co
+mpiled\webpack\bundle5.
+js:28:312989)
+    at __webpack_requir
+e_module__ (C:\Users\sf
+ung\OneDrive - Jeruth\1
+.SFS\Escritorio\SFS\sol
+-portfolio\node_modules
+\next\dist\compiled\web
+pack\bundle5.js:28:1311
+65)
+    at __nested_webpack
+_require_153728__ (C:\U
+sers\sfung\OneDrive - J
+eruth\1.SFS\Escritorio\
+SFS\sol-portfolio\node_
+modules\next\dist\compi
+led\webpack\bundle5.js:
+28:130607)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\next
+\dist\compiled\webpack\
+bundle5.js:28:131454
+    at symbolIterator (
+C:\Users\sfung\OneDrive
+ - Jeruth\1.SFS\Escrito
+rio\SFS\sol-portfolio\n
+ode_modules\next\dist\c
+ompiled\neo-async\async
+.js:1:14444)
+    at done (C:\Users\s
+fung\OneDrive - Jeruth\
+1.SFS\Escritorio\SFS\so
+l-portfolio\node_module
+s\next\dist\compiled\ne
+o-async\async.js:1:1482
+4)
+    at Hook.eval [as 
+callAsync] (eval at 
+create (C:\Users\sfung\
+OneDrive - Jeruth\1.SFS
+\Escritorio\SFS\sol-por
+tfolio\node_modules\nex
+t\dist\compiled\webpack
+\bundle5.js:13:28858), 
+<anonymous>:15:1)
+    at Hook.CALL_ASYNC_
+DELEGATE [as 
+_callAsync] (C:\Users\s
+fung\OneDrive - Jeruth\
+1.SFS\Escritorio\SFS\so
+l-portfolio\node_module
+s\next\dist\compiled\we
+bpack\bundle5.js:13:260
+12)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\next
+\dist\compiled\webpack\
+bundle5.js:28:130328
+    at symbolIterator (
+C:\Users\sfung\OneDrive
+ - Jeruth\1.SFS\Escrito
+rio\SFS\sol-portfolio\n
+ode_modules\next\dist\c
+ompiled\neo-async\async
+.js:1:14402)
+-- inner error --
+Error: Cannot find 
+module 
+'tailwindcss-animate'
+Require stack:
+- C:\Users\sfung\OneDri
+ve - Jeruth\1.SFS\Escri
+torio\SFS\sol-portfolio
+\tailwind.config.ts
+    at 
+Module.<anonymous> (nod
+e:internal/modules/cjs/
+loader:1421:15)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\next
+\dist\server\require-ho
+ok.js:55:36
+    at require.resolve 
+(node:internal/modules/
+helpers:163:19)
+    at _resolve (C:\Use
+rs\sfung\OneDrive - Jer
+uth\1.SFS\Escritorio\SF
+S\sol-portfolio\node_mo
+dules\jiti\dist\jiti.js
+:1:246378)
+    at jiti (C:\Users\s
+fung\OneDrive - Jeruth\
+1.SFS\Escritorio\SFS\so
+l-portfolio\node_module
+s\jiti\dist\jiti.js:1:2
+49092)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\tailwind.config.t
+s:97:13
+    at evalModule (C:\U
+sers\sfung\OneDrive - J
+eruth\1.SFS\Escritorio\
+SFS\sol-portfolio\node_
+modules\jiti\dist\jiti.
+js:1:251913)
+    at jiti (C:\Users\s
+fung\OneDrive - Jeruth\
+1.SFS\Escritorio\SFS\so
+l-portfolio\node_module
+s\jiti\dist\jiti.js:1:2
+49841)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\tail
+windcss\lib\lib\load-co
+nfig.js:53:30
+    at loadConfig (C:\U
+sers\sfung\OneDrive - J
+eruth\1.SFS\Escritorio\
+SFS\sol-portfolio\node_
+modules\tailwindcss\lib
+\lib\load-config.js:55:
+6)
+    at 
+Object.<anonymous> (C:\
+Users\sfung\OneDrive - 
+Jeruth\1.SFS\Escritorio
+\SFS\sol-portfolio\node
+_modules\next\dist\buil
+d\webpack\loaders\css-l
+oader\src\index.js??rul
+eSet[1].rules[14].oneOf
+[12].use[2]!C:\Users\sf
+ung\OneDrive - Jeruth\1
+.SFS\Escritorio\SFS\sol
+-portfolio\node_modules
+\next\dist\build\webpac
+k\loaders\postcss-loade
+r\src\index.js??ruleSet
+[1].rules[14].oneOf[12]
+.use[3]!C:\Users\sfung\
+OneDrive - Jeruth\1.SFS
+\Escritorio\SFS\sol-por
+tfolio\app\globals.css:
+1:7)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\next
+\dist\compiled\webpack\
+bundle5.js:28:922493
+    at Hook.eval [as 
+call] (eval at create (
+C:\Users\sfung\OneDrive
+ - Jeruth\1.SFS\Escrito
+rio\SFS\sol-portfolio\n
+ode_modules\next\dist\c
+ompiled\webpack\bundle5
+.js:13:28636), 
+<anonymous>:7:1)
+    at 
+Hook.CALL_DELEGATE [as 
+_call] (C:\Users\sfung\
+OneDrive - Jeruth\1.SFS
+\Escritorio\SFS\sol-por
+tfolio\node_modules\nex
+t\dist\compiled\webpack
+\bundle5.js:13:25906)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\next
+\dist\compiled\webpack\
+bundle5.js:28:131198
+    at 
+tryRunOrWebpackError (C
+:\Users\sfung\OneDrive 
+- Jeruth\1.SFS\Escritor
+io\SFS\sol-portfolio\no
+de_modules\next\dist\co
+mpiled\webpack\bundle5.
+js:28:312943)
+    at __webpack_requir
+e_module__ (C:\Users\sf
+ung\OneDrive - Jeruth\1
+.SFS\Escritorio\SFS\sol
+-portfolio\node_modules
+\next\dist\compiled\web
+pack\bundle5.js:28:1311
+65)
+    at __nested_webpack
+_require_153728__ (C:\U
+sers\sfung\OneDrive - J
+eruth\1.SFS\Escritorio\
+SFS\sol-portfolio\node_
+modules\next\dist\compi
+led\webpack\bundle5.js:
+28:130607)
+    at C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\node_modules\next
+\dist\compiled\webpack\
+bundle5.js:28:131454
+    at symbolIterator (
+C:\Users\sfung\OneDrive
+ - Jeruth\1.SFS\Escrito
+rio\SFS\sol-portfolio\n
+ode_modules\next\dist\c
+ompiled\neo-async\async
+.js:1:14444)
+
+Generated code for C:\U
+sers\sfung\OneDrive - J
+eruth\1.SFS\Escritorio\
+SFS\sol-portfolio\node_
+modules\next\dist\build
+\webpack\loaders\css-lo
+ader\src\index.js??rule
+Set[1].rules[14].oneOf[
+12].use[2]!C:\Users\sfu
+ng\OneDrive - Jeruth\1.
+SFS\Escritorio\SFS\sol-
+portfolio\node_modules\
+next\dist\build\webpack
+\loaders\postcss-loader
+\src\index.js??ruleSet[
+1].rules[14].oneOf[12].
+use[3]!C:\Users\sfung\O
+neDrive - Jeruth\1.SFS\
+Escritorio\SFS\sol-port
+folio\app\globals.css
+
+Import trace for 
+requested module:
+./app/globals.css
+
+
+> Build failed because 
+of webpack errors

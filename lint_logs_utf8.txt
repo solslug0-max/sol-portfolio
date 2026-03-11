@@ -1,0 +1,59 @@
+﻿
+> sol-portfolio@0.1.0 lint
+> next lint
+
+node.exe : 
+En línea: 1 Carácter: 1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (:String) [],    
+ RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+./components/charts/Pro
+ductionChart.tsx
+3:92  Error: 'Cell' is 
+defined but never 
+used.  @typescript-esli
+nt/no-unused-vars
+
+./components/effects/We
+bGLBackground.tsx
+125:13  Error: 'clock' 
+is never reassigned. 
+Use 'const' instead.  
+prefer-const
+150:26  Warning: The 
+ref value 
+'mountRef.current' 
+will likely have 
+changed by the time 
+this effect cleanup 
+function runs. If this 
+ref points to a node 
+rendered by React, 
+copy 
+'mountRef.current' to 
+a variable inside the 
+effect, and use that 
+variable in the 
+cleanup function.  reac
+t-hooks/exhaustive-deps
+
+info  - Need to 
+disable some ESLint 
+rules? Learn more 
+here: https://nextjs.or
+g/docs/basic-features/e
+slint#disabling-rules
