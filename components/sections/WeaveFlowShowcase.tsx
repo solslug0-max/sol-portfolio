@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 
 export default function WeaveFlowShowcase() {
@@ -21,11 +20,12 @@ export default function WeaveFlowShowcase() {
                         </>
                     }
                 >
-                    <Image
-                        src="/images/weaveflow-showcase.png"
-                        alt="WeaveFlow Dashboard Showcase"
-                        height={1080}
-                        width={1920}
+                    <video
+                        src="/videos/weaveflow-demo.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
                         className="w-full h-full object-cover object-center"
                         draggable={false}
                     />
