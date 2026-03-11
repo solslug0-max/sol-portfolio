@@ -5,6 +5,7 @@ import WeaveFlowShowcase from "@/components/sections/WeaveFlowShowcase";
 import Experience from "@/components/sections/Experience";
 import Portfolio from "@/components/sections/Portfolio";
 import Skills from "@/components/sections/Skills";
+import Testimonials from "@/components/sections/Testimonials";
 import Education from "@/components/sections/Education";
 import Contact from "@/components/sections/Contact";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Experience />
       <Portfolio />
       <Skills />
+      <Testimonials />
       <Education />
       <Contact />
     </div>

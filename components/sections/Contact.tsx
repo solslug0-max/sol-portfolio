@@ -1,53 +1,60 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Contact() {
     const contactLinks = [
         {
-            icon: <Mail className="w-4 h-4" />,
+            icon: <Mail className="w-5 h-5" />,
             text: "solfungsanes@outlook.com",
             href: "mailto:solfungsanes@outlook.com",
         },
         {
-            icon: <Phone className="w-4 h-4" />,
+            icon: <Phone className="w-5 h-5" />,
             text: "(+51) 957 489 765",
             href: "tel:+51957489765",
         },
         {
-            icon: <MapPin className="w-4 h-4" />,
+            icon: <MapPin className="w-5 h-5" />,
             text: "Lima, Perú",
             href: "#",
         },
         {
-            icon: <Linkedin className="w-4 h-4" />,
+            icon: <Linkedin className="w-5 h-5" />,
             text: "LinkedIn",
             href: "https://www.linkedin.com/in/solfungsanes",
         },
     ];
 
     return (
-        <section className="py-32 bg-bg-0 relative overflow-hidden z-10" id="contacto">
+        <section className="py-32 bg-bg-primary relative overflow-hidden z-10" id="contacto">
             {/* Radial Gradient Background */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/10 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/20 rounded-full blur-[120px] pointer-events-none" />
 
             <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                <div className="max-w-3xl mx-auto text-center">
+                <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
+                        initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-4xl md:text-6xl font-serif font-bold text-text-0 mb-6 drop-shadow-sm">
-                            ¿Listo para trabajar <span className="text-accent">juntos?</span>
+                        <h2 className="text-4xl md:text-7xl font-serif font-extrabold tracking-tighter text-text-primary mb-6 drop-shadow-sm">
+                            ¿Listo para trabajar <span className="text-accent inline-block">juntos?</span>
                         </h2>
-                        <p className="text-lg md:text-xl text-text-2 mb-12 leading-relaxed">
+                        <p className="text-lg md:text-xl text-text-secondary mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
                             Busco oportunidades donde pueda combinar análisis comercial, data analytics y desarrollo de soluciones digitales para generar impacto real.
                         </p>
 
-                        <div className="flex flex-wrap justify-center gap-4">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
+                            <Button size="lg" className="bg-accent hover:bg-accent-hover text-white shadow-lg shadow-accent/25 h-14 px-8 text-lg transition-all hover:scale-105 rounded-2xl w-full sm:w-auto">
+                                Conversar ahora <ArrowRight className="ml-2 w-5 h-5" />
+                            </Button>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
                             {contactLinks.map((link, index) => (
                                 <motion.a
                                     key={index}
@@ -58,12 +65,12 @@ export default function Contact() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true, margin: "-50px" }}
                                     transition={{ delay: index * 0.1, duration: 0.5 }}
-                                    className="flex items-center gap-2 px-6 py-3 rounded-full bg-bg-1 border border-border/60 text-text-1 hover:text-accent hover:border-accent/40 hover:bg-bg-2 transition-all duration-300 shadow-sm hover:shadow-[0_0_15px_rgba(212,136,58,0.15)] group"
+                                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-2xl bg-bg-secondary/80 border border-border hover:border-accent/40 hover:bg-bg-tertiary transition-all duration-300 shadow-sm group backdrop-blur-sm"
                                 >
-                                    <span className="text-text-2 group-hover:text-accent transition-colors">
+                                    <div className="w-12 h-12 rounded-full bg-bg-elevated flex items-center justify-center text-text-secondary group-hover:text-accent group-hover:scale-110 transition-all border border-border/50">
                                         {link.icon}
-                                    </span>
-                                    <span className="font-medium text-sm md:text-base">{link.text}</span>
+                                    </div>
+                                    <span className="font-semibold text-text-primary text-sm">{link.text}</span>
                                 </motion.a>
                             ))}
                         </div>

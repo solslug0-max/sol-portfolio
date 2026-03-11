@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { GraduationCap, BookOpen, BarChart3, Briefcase, Search, Lock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 const education = [
     {
@@ -16,6 +17,7 @@ const education = [
         title: "Applied Agentic AI for Business",
         institution: "MIT Professional Education",
         year: "En curso",
+        highlight: true,
     },
     {
         icon: <BarChart3 className="w-8 h-8 text-success" />,
@@ -36,7 +38,7 @@ const education = [
         year: "—",
     },
     {
-        icon: <Lock className="w-8 h-8 text-[#A078C8]" />,
+        icon: <Lock className="w-8 h-8 text-text-tertiary" />,
         title: "NIST Cybersecurity Framework",
         institution: "MIT Affiliated Program",
         year: "—",
@@ -45,17 +47,21 @@ const education = [
 
 export default function Education() {
     return (
-        <section className="py-24 bg-bg-1 border-y border-border relative z-10" id="educacion">
+        <section className="py-24 bg-bg-secondary/40 border-y border-border/50 relative z-10" id="educacion">
             <div className="container mx-auto px-6 lg:px-12">
                 <div className="mb-16 text-center">
-                    <motion.h2
+                    <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-50px" }}
-                        className="text-3xl md:text-5xl font-serif font-bold text-text-0 mb-4"
                     >
-                        Educación Continua
-                    </motion.h2>
+                        <div className="text-xs font-bold tracking-widest text-text-tertiary uppercase mb-2">
+                            Formación Académica
+                        </div>
+                        <h2 className="text-3xl md:text-5xl font-serif font-extrabold tracking-tighter text-text-primary mb-4">
+                            Educación <span className="text-accent">Continua</span>
+                        </h2>
+                    </motion.div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -66,19 +72,22 @@ export default function Education() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group"
+                            className="group h-full"
                         >
-                            <Card className="h-full bg-bg-0 border-border hover:border-accent/50 transition-colors duration-300">
-                                <CardContent className="p-6 flex items-start gap-4">
-                                    <div className="bg-bg-1 p-3 rounded-xl border border-border group-hover:bg-bg-2 transition-colors duration-300">
+                            <Card className={`h-full relative overflow-hidden transition-colors duration-300 ${edu.highlight ? 'bg-bg-primary border-transparent' : 'bg-bg-secondary border-border hover:border-accent/50'} `}>
+                                {edu.highlight && (
+                                    <BorderBeam size={200} duration={8} colorFrom="var(--accent)" colorTo="var(--info)" />
+                                )}
+                                <CardContent className="p-6 flex items-start gap-4 relative z-10">
+                                    <div className="bg-bg-tertiary p-3 rounded-xl border border-border/50 group-hover:bg-bg-elevated transition-colors duration-300 shrink-0">
                                         {edu.icon}
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-text-0 text-lg leading-tight mb-1 group-hover:text-accent transition-colors duration-300">
+                                        <h3 className="font-bold text-text-primary text-lg leading-tight mb-1 group-hover:text-accent transition-colors duration-300">
                                             {edu.title}
                                         </h3>
-                                        <p className="text-text-2 text-sm">{edu.institution}</p>
-                                        <p className="text-text-3 text-xs mt-2 font-mono">{edu.year}</p>
+                                        <p className="text-text-secondary text-sm font-medium">{edu.institution}</p>
+                                        <p className="text-text-tertiary text-xs mt-2 font-mono font-bold">{edu.year}</p>
                                     </div>
                                 </CardContent>
                             </Card>
