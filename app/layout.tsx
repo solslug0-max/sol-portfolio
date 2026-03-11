@@ -20,7 +20,7 @@ export default function RootLayout({
       <body
         className={`${jakarta.variable} ${sora.variable} font-sans antialiased bg-bg-primary text-text-primary min-h-screen flex flex-col`}
       >
-        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="data-theme" defaultTheme="light" disableTransitionOnChange>
           <Navbar />
           <main className="flex-grow">
             {children}
