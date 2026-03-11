@@ -1,4 +1,5 @@
 import Hero from "@/components/sections/Hero";
+import AboutMe from "@/components/sections/AboutMe";
 import KPICards from "@/components/sections/KPICards";
 import Analytics from "@/components/sections/Analytics";
 import WeaveFlowShowcase from "@/components/sections/WeaveFlowShowcase";
@@ -8,11 +9,13 @@ import Skills from "@/components/sections/Skills";
 import Testimonials from "@/components/sections/Testimonials";
 import Education from "@/components/sections/Education";
 import Contact from "@/components/sections/Contact";
+import WhatsAppBubble from "@/components/ui/whatsapp-bubble";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Hero />
+      <AboutMe />
       <KPICards />
       <WeaveFlowShowcase />
       <Analytics />
@@ -22,6 +25,7 @@ export default function Home() {
       <Testimonials />
       <Education />
       <Contact />
+      <WhatsAppBubble />
     </div>
   );
 }

@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const WebGLBackground = dynamic(() => import("@/components/effects/WebGLBackground"), {
     ssr: false,
@@ -48,7 +49,7 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.8 }}
                     className="mt-2 text-lg md:text-xl text-text-secondary max-w-2xl mx-auto font-medium"
                 >
-                    Analista Comercial & Planificador de Planta. SQL, Power BI, SAP S/4HANA y desarrollo de soluciones digitales con impacto medible en productividad y revenue.
+                    Analista Comercial &amp; Planificador de Planta. SQL, Power BI, SAP S/4HANA y desarrollo de soluciones digitales con impacto medible en productividad y revenue.
                 </motion.p>
 
                 <motion.div
@@ -57,12 +58,21 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 1.0 }}
                     className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
                 >
-                    <Button size="lg" className="bg-accent hover:bg-accent-hover text-white shadow-lg shadow-accent/25 h-12 px-8 text-base transition-all hover:scale-105 rounded-xl">
-                        Conversemos <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
-                    <Button size="lg" variant="outline" className="h-12 px-8 text-base border-border bg-transparent hover:bg-bg-tertiary transition-all hover:scale-105 rounded-xl">
-                        Ver Portfolio
-                    </Button>
+                    <Link href="https://wa.me/51957489765?text=Hola%20Sol%2C%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20conversar." target="_blank" rel="noopener noreferrer">
+                        <Button size="lg" className="bg-accent hover:bg-accent-hover text-white shadow-lg shadow-accent/25 h-12 px-8 text-base transition-all hover:scale-105 rounded-xl">
+                            Conversemos <ArrowRight className="ml-2 w-4 h-4" />
+                        </Button>
+                    </Link>
+                    <Link href="#portfolio">
+                        <Button size="lg" variant="outline" className="h-12 px-8 text-base border-border bg-transparent hover:bg-bg-tertiary transition-all hover:scale-105 rounded-xl">
+                            Ver Portfolio
+                        </Button>
+                    </Link>
+                    <Link href="/cv-sol-fung.pdf" target="_blank">
+                        <Button size="lg" variant="outline" className="h-12 px-8 text-base border-border bg-transparent hover:bg-bg-tertiary transition-all hover:scale-105 rounded-xl">
+                            <Download className="mr-2 w-4 h-4" /> Descargar CV
+                        </Button>
+                    </Link>
                 </motion.div>
 
                 <motion.div

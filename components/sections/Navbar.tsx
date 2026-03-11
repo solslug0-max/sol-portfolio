@@ -10,6 +10,7 @@ import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
+    { name: "Sobre Mí", href: "#sobre-mi" },
     { name: "Impacto", href: "#impacto" },
     { name: "Analytics", href: "#analytics" },
     { name: "Experiencia", href: "#experiencia" },
@@ -63,7 +64,9 @@ export default function Navbar() {
 
                 <div className="hidden md:flex items-center gap-4">
                     <ThemeToggle />
-                    <Button size="sm" className="bg-accent text-white hover:bg-accent-hover font-medium">Let&apos;s Talk</Button>
+                    <Link href="https://wa.me/51957489765?text=Hola%20Sol%2C%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20conversar." target="_blank" rel="noopener noreferrer">
+                        <Button size="sm" className="bg-accent text-white hover:bg-accent-hover font-medium">{"Let's Talk"}</Button>
+                    </Link>
                 </div>
 
                 {/* Mobile Nav Toggle */}
@@ -99,7 +102,9 @@ export default function Navbar() {
                                         {link.name}
                                     </Link>
                                 ))}
-                                <Button className="mt-4 bg-accent text-white" size="lg" onClick={() => setMobileMenuOpen(false)}>Let&apos;s Talk</Button>
+                                <Link href="https://wa.me/51957489765?text=Hola%20Sol%2C%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20conversar." target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                                    <Button className="mt-4 bg-accent text-white" size="lg">{"Let's Talk"}</Button>
+                                </Link>
                             </nav>
                         </motion.div>
                     )}
