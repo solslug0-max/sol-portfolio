@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
 interface GlowingEffectProps {
@@ -7,9 +7,7 @@ interface GlowingEffectProps {
     className?: string;
     disabled?: boolean;
     proximity?: number;
-    spread?: number;
     borderWidth?: number;
-    inactiveZone?: number;
     glow?: boolean;
 }
 
@@ -18,9 +16,7 @@ export const GlowingEffect = ({
     className,
     disabled = false,
     proximity = 64,
-    spread = 40,
     borderWidth = 2,
-    inactiveZone = 0.01,
     glow = true,
 }: GlowingEffectProps) => {
     const containerRef = useRef<HTMLDivElement>(null);

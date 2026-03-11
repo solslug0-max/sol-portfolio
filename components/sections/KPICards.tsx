@@ -94,7 +94,7 @@ export default function KPICards() {
                             }}
                             className="h-full aspect-auto md:aspect-[2/1] lg:aspect-auto"
                         >
-                            <GlowingEffect spread={40} glow={true} proximity={64} inactiveZone={0.01} borderWidth={2}>
+                            <GlowingEffect glow={true} proximity={64} borderWidth={2}>
                                 <div className="p-8 flex flex-col justify-center h-full group">
                                     <div className="w-12 h-12 rounded-full bg-accent-dim flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                         <kpi.icon className="w-6 h-6 text-accent" />

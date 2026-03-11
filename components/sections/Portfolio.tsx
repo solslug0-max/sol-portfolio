@@ -83,7 +83,7 @@ export default function Portfolio() {
                     viewport={{ once: true, margin: "-50px" }}
                     className="grid grid-cols-1 md:grid-cols-12 auto-rows-[minmax(300px,auto)] gap-6"
                 >
-                    {projects.map((project, idx) => (
+                    {projects.map((project) => (
                         <motion.div
                             key={project.title}
                             variants={{
@@ -92,7 +92,7 @@ export default function Portfolio() {
                             }}
                             className={`${project.gridClass} h-full`}
                         >
-                            <GlowingEffect spread={40} glow={true} disabled={false} proximity={64} inactiveZone={0.01} borderWidth={1} className="h-full">
+                            <GlowingEffect glow={true} disabled={false} proximity={64} borderWidth={1} className="h-full">
                                 <div className="flex flex-col h-full bg-bg-secondary overflow-hidden group">
                                     <div className="relative w-full aspect-video sm:aspect-[16/7] md:aspect-video lg:aspect-auto flex-1 overflow-hidden border-b border-border">
                                         <Image

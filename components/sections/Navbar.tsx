@@ -63,7 +63,7 @@ export default function Navbar() {
 
                 <div className="hidden md:flex items-center gap-4">
                     <ThemeToggle />
-                    <Button size="sm" className="bg-accent text-white hover:bg-accent-hover font-medium">Let's Talk</Button>
+                    <Button size="sm" className="bg-accent text-white hover:bg-accent-hover font-medium">Let&apos;s Talk</Button>
                 </div>
 
                 {/* Mobile Nav Toggle */}
@@ -99,7 +99,7 @@ export default function Navbar() {
                                         {link.name}
                                     </Link>
                                 ))}
-                                <Button className="mt-4 bg-accent text-white" size="lg" onClick={() => setMobileMenuOpen(false)}>Let's Talk</Button>
+                                <Button className="mt-4 bg-accent text-white" size="lg" onClick={() => setMobileMenuOpen(false)}>Let&apos;s Talk</Button>
                             </nav>
                         </motion.div>
                     )}
