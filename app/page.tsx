@@ -16,6 +16,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Hero />
       <AboutMe />
+      <Education />
       <KPICards />
       <WeaveFlowShowcase />
       <Analytics />
@@ -23,7 +24,6 @@ export default function Home() {
       <Portfolio />
       <Skills />
       <Testimonials />
-      <Education />
       <Contact />
       <WhatsAppBubble />
     </div>
