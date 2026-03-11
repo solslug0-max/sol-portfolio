@@ -5,7 +5,7 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 
 export default function WeaveFlowShowcase() {
     return (
-        <section className="relative w-full overflow-hidden py-12 md:py-24">
+        <section className="relative w-full overflow-hidden py-12 md:py-24" id="weaveflow">
             <div className="container mx-auto px-4 md:px-8">
                 <ContainerScroll
                     titleComponent={

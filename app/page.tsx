@@ -16,13 +16,13 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Hero />
       <AboutMe />
-      <Education />
       <KPICards />
       <WeaveFlowShowcase />
       <Analytics />
-      <Experience />
       <Portfolio />
+      <Experience />
       <Skills />
+      <Education />
       <Testimonials />
       <Contact />
       <WhatsAppBubble />

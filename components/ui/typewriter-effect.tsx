@@ -72,7 +72,7 @@ export const TypewriterEffectSmooth = ({
 
     return (
         <div className={cn("my-6 text-center", className)}>
-            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-extrabold tracking-tighter leading-tight pb-2 inline-block">
+            <div className="font-serif font-extrabold tracking-tighter leading-tight pb-2 inline-block" style={{ fontSize: "clamp(2.5rem, 4.5vw, 4rem)" }}>
                 {renderWords()}
                 <motion.span
                     initial={{ opacity: 0 }}

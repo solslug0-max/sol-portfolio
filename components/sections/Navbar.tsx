@@ -12,8 +12,8 @@ import { Button } from "@/components/ui/button";
 const navLinks = [
     { name: "Sobre Mí", href: "#sobre-mi" },
     { name: "Impacto", href: "#impacto" },
+    { name: "WeaveFlow", href: "#weaveflow" },
     { name: "Analytics", href: "#analytics" },
-    { name: "Experiencia", href: "#experiencia" },
     { name: "Portfolio", href: "#portfolio" },
     { name: "Skills", href: "#skills" },
     { name: "Contacto", href: "#contacto" },
