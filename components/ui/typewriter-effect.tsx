@@ -71,24 +71,20 @@ export const TypewriterEffectSmooth = ({
     };
 
     return (
-        <div className={cn("flex space-x-1 my-6", className)}>
-            <div
-                className="overflow-hidden pb-2"
-            >
-                <div className="text-3xl sm:text-5xl md:text-7xl xl:text-8xl font-serif font-extrabold tracking-tighter" style={{ whiteSpace: "nowrap" }}>
-                    {renderWords()}{" "}
-                </div>
+        <div className={cn("my-6 text-center", className)}>
+            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-extrabold tracking-tighter leading-tight pb-2 inline-block">
+                {renderWords()}
+                <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse" }}
+                    className={cn(
+                        "inline-block rounded-sm w-[4px] md:w-[6px] h-9 sm:h-10 md:h-12 lg:h-14 bg-accent align-middle ml-2 -mt-2",
+                        cursorClassName,
+                        animationCompleted && "opacity-50"
+                    )}
+                ></motion.span>
             </div>
-            <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse" }}
-                className={cn(
-                    "inline-block rounded-sm w-[4px] md:w-[8px] h-8 sm:h-12 md:h-16 xl:h-20 bg-accent",
-                    cursorClassName,
-                    animationCompleted && "opacity-50"
-                )}
-            ></motion.span>
         </div>
     );
 };
